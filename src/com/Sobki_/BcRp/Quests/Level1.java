@@ -126,6 +126,7 @@ public class Level1 implements Listener {
 
 					Bukkit.broadcastMessage("" + sign.getLines());
 					Bukkit.broadcastMessage("" + s.getSignText());
+					//Test
 					if(sign.getLines().equals(s.getSignText())){
 						Bukkit.broadcastMessage("Water");
 						return;	
