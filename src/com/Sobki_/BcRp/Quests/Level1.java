@@ -122,17 +122,22 @@ public class Level1 implements Listener {
 			Block clickedBlock = e.getClickedBlock();
 			if (clickedBlock.getType() == Material.WALL_SIGN || clickedBlock.getType() == Material.SIGN || clickedBlock.getType() == Material.SIGN_POST) {
 				Sign sign = (Sign) clickedBlock.getState();
+				String[] lines;
 				for(SignTextEnum s : SignTextEnum.values()){
-
-					Bukkit.broadcastMessage("" + sign.getLines());
-					Bukkit.broadcastMessage("" + s.getSignText());
-					if(sign.getLines().equals(s.getSignText())){
-						Bukkit.broadcastMessage("Water");
-						return;	
+					lines = s.getSignText();
+					if(s.name().equalsIgnoreCase("water")){
+						if(lines[0].equalsIgnoreCase(sign.getLine(0))){
+							Bukkit.broadcastMessage("Water");
+							return;	
+						}
 					}
 				}
+
+			
+
 			}
 		}
+
 	}
 
 }
