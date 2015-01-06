@@ -1,6 +1,6 @@
 package com.Sobki_.BcRp.Quests;
 
-import java.util.HashMap;
+
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
@@ -99,7 +99,6 @@ public class Level1 implements Listener {
 
 	@EventHandler
 	public void onWaterSignChange(SignChangeEvent event) {
-		Player p = event.getPlayer();
 		for(SignTextEnum signTextEnum : SignTextEnum.values()){
 			if (event.getLine(0).equalsIgnoreCase("[element]") && event.getLine(1).equalsIgnoreCase(signTextEnum.name())){
 				int i = 0;
@@ -114,7 +113,6 @@ public class Level1 implements Listener {
 		}
 	}
 
-	@SuppressWarnings("static-access")
 	@EventHandler
 	public void onWaterSignClick(PlayerInteractEvent e) {
 
