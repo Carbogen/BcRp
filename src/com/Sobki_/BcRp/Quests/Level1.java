@@ -128,11 +128,24 @@ public class Level1 implements Listener {
 							Bukkit.broadcastMessage("Water");
 							return;	
 						}
+					}else if(s.name().equalsIgnoreCase("fire")){
+						if(lines[0].equalsIgnoreCase(sign.getLine(0))){
+							Bukkit.broadcastMessage("Fire");
+							return;	
+						}
+				}else if(s.name().equalsIgnoreCase("earth")){
+					if(lines[0].equalsIgnoreCase(sign.getLine(0))){
+						Bukkit.broadcastMessage("Earth");
+						return;	
+					}
+				}else if(s.name().equalsIgnoreCase("Air")){
+					if(lines[0].equalsIgnoreCase(sign.getLine(0))){
+						Bukkit.broadcastMessage("Air");
+						return;	
 					}
 				}
-
 			
-
+				}
 			}
 		}
 
