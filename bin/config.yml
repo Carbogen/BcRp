@@ -1,0 +1,16 @@
+# ---- BcRp Configuration File ---- #
+Rarity Levels (%):
+    JunkItem: 85
+    Common: 50
+    Uncommon: 40
+    Unique: 35
+    Rare: 25
+    Spiritual: 15
+    Harmonic: 5
+    Omnipotence: 1
+
+SpeedDescription: Increasing your speed level will allow your character to run faster. Level 10 = Speed 1 - Level 25 = Speed 2 - Level 50 = Speed 3. The speed skill cannot go any higher than 50. At level 50, you will reach the fastest speed achievable.
+JumpDescription: Increasing your jump level will allow your character to jump higher. Level 10 = Jump 1 - Level 25 = Jump 2 - Level 50 = Jump 3. The jump skill cannot go any higher than 50. At level 50, you will reach the fastest speed achievable.
+HerbalismDescription: Increasing your herbalism level will allow your character to use herbs and make medicines. The higher the level, the more medicines you can craft.
+StrengthDescription: Increasing your strength level will allow your character to deal more damage when attacking mobs.
+ForgingDescription: Increasing your forging level will allow your character to combine materials to armour. Eg. Armour + Horn = Armour w/ Thorns.
