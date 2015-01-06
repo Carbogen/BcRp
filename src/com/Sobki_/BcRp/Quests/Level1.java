@@ -124,8 +124,8 @@ public class Level1 implements Listener {
 				Sign sign = (Sign) clickedBlock.getState();
 				for(SignTextEnum s : SignTextEnum.values()){
 
-					Bukkit.broadcastMessage(sign.getLines());
-					Bukkit.broadcastMessage(s.getSignText())
+					Bukkit.broadcastMessage("" + sign.getLines());
+					Bukkit.broadcastMessage("" + s.getSignText());
 					if(sign.getLines().equals(s.getSignText())){
 						Bukkit.broadcastMessage("Water");
 						return;	
